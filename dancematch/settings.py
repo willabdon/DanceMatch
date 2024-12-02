@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 
+from datetime import timedelta
 from decouple import config
 from pathlib import Path
 
@@ -144,6 +145,14 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
 }
 
+# Simple JWT
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS': False,
+    'BLACKLIST_AFTER_ROTATION': True,
+}
 
 # Logs
 
