@@ -1,0 +1,32 @@
+# Python compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Environment variable files
+.env
+*.env
+
+# Log files
+logs/
+*.log
+
+# Docker-related files
+*.pid
+build/
+*.env.db
+
+# Editor configuration files
+.vscode/
+.idea/
+*.swp
+
+# Python cache and packaging files
+*.egg-info/
+.eggs/
+
+# Temporary files created during development
+*.bak
+*.tmp
+*.old
