@@ -22,7 +22,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class DancerSerializer(serializers.ModelSerializer):
-    user = UserSerializer(required=True)
+    user = UserSerializer(required=False)
         
     class Meta:
         model = Dancer
